@@ -5,9 +5,6 @@ import plotly.express as px
 import codecs
 import matplotlib.pyplot as plt
 
-columns_show = ['gross', 'name','director', 'rating']
-
-
 # Function with cache that load all employees
 @st.cache
 def load_dataAll():
@@ -66,7 +63,7 @@ df_employees = load_data(500)
 df_employeescomplete = load_dataAll()
 
 # crear title de la app web.
-st.title("Employees App")
+st.title("Employees App (By Leonardo Gonzalez)")
 
 sidebar = st.sidebar
 sidebar.title("Filters")
