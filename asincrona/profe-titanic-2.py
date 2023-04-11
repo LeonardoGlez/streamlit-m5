@@ -16,6 +16,7 @@ sidebar.write("You can add any elements to the sidebar.")
 # ask user the current date
 today = datetime.date.today()
 today_date = sidebar.date_input('Cual es tu cumple : ', today)
+
 #st.success('tu cumple es : `%s` felicidades ...' % (today_date))
 st.success(f'tu cumple es: {today_date} felicidades...') 
 
@@ -49,7 +50,8 @@ fare_select = optionals.slider(
 )
 
 subset_fare = titanic_data[(titanic_data['fare'] >= fare_select)]
-
+optionals.checkbox("dentro de optionals mas componentes
+                   ")
 st.write(f"Number of Records With this Fare {fare_select}: {subset_fare.shape[0]}")
 st.dataframe(subset_fare)
 
